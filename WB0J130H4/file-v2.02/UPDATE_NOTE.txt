@@ -1,0 +1,68 @@
+--------------------------------------------------
+documentation for v2.02
+--------------------------------------------------
+
+-------------------------
+What's new in v2.02?
+-------------------------
+
+fixed - smooth scroll bug fixed again
+
+Please not that v2.x rewrite and clean alot of code, can not update from v1.x.
+
+-------------------------
+How to update?
+-------------------------
+
+1. First, BACKUP BACKUP BACKUP your edited template.
+
+2. Replace `assets/js/vendor.js` with new version.
+
+DONE.
+
+
+
+
+
+
+
+--------------------------------------------------
+documentation for v2.01
+--------------------------------------------------
+
+-------------------------
+What's new in v2.01?
+-------------------------
+
+fixed - smooth scroll bug fixed
+
+Please not that v2.x rewrite and clean alot of code, can not update from v1.x.
+
+-------------------------
+How to update?
+-------------------------
+
+1. First, BACKUP BACKUP BACKUP your edited template.
+
+2. Replace `assets/js/main.js` with new version.
+
+DONE.
+
+
+
+
+
+
+--------------------------------------------------
+documentation for v2.0
+--------------------------------------------------
+
+-------------------------
+What's new in v2.0?
+-------------------------
+
+change - remove option class
+change - rewrite css/js/html
+
+
+Please not that v2.x rewrite and clean alot of code, can not update from v1.x.
