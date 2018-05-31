@@ -48,6 +48,23 @@ header {
   right: 0;
   z-index: 1000;
 
+.navbar-toggler {
+  outline: none;
+  .line-bar {
+    display:block;
+    width: 35px;
+    background: #fff;
+    height: 3px;
+    margin: 6px 0 6px auto;
+    border-radius: 4px;
+  }
+  .line-bar:last-of-type,
+  .line-bar:first-of-type {
+    width: 40px;
+    margin: 6px auto;
+  }
+}
+
   .brand-logo {
     max-height: 35px
   }
@@ -109,6 +126,8 @@ header {
   .navbar-main {
     padding-left: 0;
     padding-right: 0;
+
+    // padding-top: 18px;
   }
 }
 
@@ -208,6 +227,7 @@ header {
   input:hover {
     background: none;
     border: none;
+    padding: .75rem;
     border-bottom: 2px solid #37255c;
     border-radius: 0;
     color: rgba(255,255,255,0.7);
@@ -325,19 +345,8 @@ header {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
-}
-
-@media (max-width: 991px) {
-  .page-intro .section-title {
-    font-size: 36px;
-    line-height: 1.333333333333333;
-  }
-}
-@media (min-width: 992px) {
-  .page-intro {
-    padding-top: 250px;
-    padding-bottom: 280px;
-  }
+  padding-top: 250px;
+  padding-bottom: 280px;
 }
 
 // Sections
@@ -618,6 +627,8 @@ header {
         display: inline-block;
         position: absolute;
         right: 25px;
+        top: 50%;
+        margin-top: -9.5px;
       }
     }
     .faq-answer-block {
@@ -667,5 +678,200 @@ header {
     color: $primaryDark;
     border-radius: 200px;
     background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+@media (max-width: 1199px) {
+  header .navbar-nav .nav-link .identify-triangle {
+    display: none;
+  }
+  .page-intro {
+    background-size: 125% auto;
+  }
+  .countdown-section .countdown-number {
+    font-size: 3.5rem;
+  }
+  .countdown-section .countdown-wrapper-class {
+    padding: 20px 25px;
+    min-width: 125px;
+    min-width: 137px;
+  }
+  .countdown-section .countdown-wrapper-class:hover {
+  	padding-bottom: 15px;
+  	padding-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .countdown-section .countdown-wrapper-class {
+  	padding: 15px 20px;
+    min-width: 125px;
+  }
+  .page-intro-row {
+    text-align: center;
+  }
+  header .main-header-nav {
+    background: rgba(60,38,104,0.95);
+  }
+  header .navbar-expand-lg .navbar-nav .nav-link {
+  	padding: 1rem;
+  	border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .countdown-section .countdown-type {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .countdown-section .countdown-number {
+    font-size: 3rem;
+  }
+  .page-intro {
+    padding-top: 220px;
+    padding-bottom: 200px;
+    background-size: 115% auto;
+  }
+  .countdown-section .countdown-wrapper-class:hover {
+  	padding-bottom: 12px;
+  	padding-top: 12px;
+  }
+
+  .btn-social-tile {
+  	padding: 15px;
+  	font-size: 1.25rem;
+  }
+  .main-links {
+    padding-top: 10px;
+  }
+  .sub-header .container {
+    max-width: none !important;
+  }
+  header .main-nav-container {
+    max-width: none !important;
+    .main-links {
+    	padding-top: 10px;
+      text-align: center;
+    }
+    .navbar-collapse {
+      margin: 0 -15px -.5rem -15px !important;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .countdown-section .countdown-number {
+  	font-size: 2rem;
+    margin: 0 0 5px 0;
+  }
+  .page-intro {
+  	padding-top: 200px;
+  	padding-bottom: 180px;
+  	background-size: 130% auto;
+  }
+  .section-sub-title {
+    font-size: 16px;
+  }
+  .page-section .section-title {
+  	font-size: 1.5rem;
+  }
+  .page-intro-row p {
+    font-size: 16px;
+  }
+  .countdown-section .countdown-wrapper-class {
+  	padding: 15px 10px;
+  	min-width: 110px;
+  	margin: 0 1px;
+  }
+  .page-intro-row .section-title {
+  	font-size: 26px;
+  }
+  .signup-form .signup-form-block {
+    padding: 30px 30px 25px 25px;
+  }
+}
+@media (max-width: 575px) {
+  .page-intro-row .section-title {
+  	font-size: 24px;
+  }
+  .page-intro {
+  	background-size: 170% auto;
+  }
+  .countdown-section .countdown-wrapper-class:hover {
+  	padding-bottom: 10px;
+  	padding-top: 10px;
+  }
+  .countdown-section .countdown-wrapper-class {
+    padding: 10px 5px;
+    min-width: 85px;
+    margin: 0 0 4px 0;
+  }
+  .countdown-section .countdown-type {
+  	font-size: 0.8rem;
+  	padding: 0 10px;
+  }
+  .faq-section .faq-tile .faq-link .faq-link-title {
+  	font-weight: normal;
+  	font-size: 0.9rem;
+  }
+  .countdown-section .countdown-number {
+    font-size: 1.25rem;
+    margin: 3px 0 3px 0;
+  }
+  .countdown-section {
+    padding: 30px 0 100px 0;
+  }
+  .page-intro-row p {
+  	font-size: 16px;
+  	padding: 0 15px;
+  }
+  .page-section .section-title {
+  	font-size: 1.4rem;
+  }
+  .btn-read-more {
+    font-size: 12px;
+  }
+  .signup-form .form-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .faq-section {
+  	margin-bottom: -2px;
+  	padding-bottom: 100px;
+  }
+  .intro-section {
+    padding: 75px 0 85px 0;
+  }
+  .signup-form input,
+  .signup-form input:focus,
+  .signup-form input:hover {
+    background: #37255c;
+    padding: .7rem 1rem;
+  }
+  .checkbox-wrap {
+    padding: 15px 30px 15px 20px;
+    background: #1e0a45;
+    margin-bottom: 5px;
+  }
+  .signup-form .btn--form:hover,
+  .signup-form .btn--form:visited,
+  .signup-form .btn--form:focus {
+    padding: 15px 30px !important;
+  }
+  .signup-form .btn--form {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-section {
+  	padding: 20px 0 75px 0;
+  }
+  .page-intro {
+    background-size: 200% auto;
+  }
+  .page-section .section-title {
+  	font-size: 1.25rem;
+  }
+  .page-intro-row .section-title {
+  	font-size: 20px;
   }
 }
