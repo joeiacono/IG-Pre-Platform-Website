@@ -242,6 +242,8 @@ header {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+          box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 
   i {
     margin-left: 10px;
@@ -252,6 +254,8 @@ header {
 .btn-read-more:focus {
   color: $primaryDark;
   background-color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+          box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 
@@ -514,6 +518,8 @@ header {
 .btn-social-tile:focus {
   color: #fff;
   background: rgb(55, 37, 92);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 .btn-social-tile:hover {
   padding-bottom: 16px;
