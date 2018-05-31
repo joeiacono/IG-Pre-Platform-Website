@@ -676,6 +676,7 @@ header {
   .btn--form:visited,
   .btn--form:focus {
     color: $primaryDark;
+    padding: 15px 30px;
     border-radius: 200px;
     background-color: rgba(255, 255, 255, 1);
   }
